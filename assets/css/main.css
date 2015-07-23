@@ -1,11 +1,8 @@
 /*
-
 Kirby Starterkit
-
 Author: Bastian Allgeier / Sascha Lack
 URL:    http://getkirby.com
 Email:  support@getkirby.com
-
 */
 
 
@@ -58,6 +55,7 @@ footer, header, hgroup, main, nav, section, summary {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 
@@ -95,8 +93,8 @@ body {
   font-size: 1.25em;
   line-height: 1.5em;
   padding: 1.5em;
-  max-width: 50em;
-  background: #fff;
+  max-width: 1080px;
+  background: #f8f8f8;
   color: #222;
 }
 
@@ -260,6 +258,11 @@ h1 a, h2 a, h3 a, h4 a {
 .text ul,
 .text ol {
   margin-left: 1em;
+}
+
+.grid-item {
+  width: 25%;
+  border: 2px solid #f8f8f8;
 }
 
 /* Project meta

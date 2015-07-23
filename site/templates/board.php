@@ -11,11 +11,14 @@
     <div class="text">
       <?php echo $page->text()->kirbytext() ?>
 
-      <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
-      <figure>
-        <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
-      </figure>
-      <?php endforeach ?>
+      <div class="grid">
+        <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
+          <div class="grid-item">
+            <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>" width="<?php echo $image->width() ?>" height="<?php echo $image->height() ?>">
+          </div>
+        <?php endforeach ?>
+      </div>
+
     </div>
 
     <nav class="nextprev cf" role="navigation">
