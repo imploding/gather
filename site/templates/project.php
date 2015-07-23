@@ -5,7 +5,6 @@
     <h1><?php echo $page->title()->html() ?></h1>
 
     <ul class="meta cf">
-      <li><b>Year:</b> <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('Y', 'year') ?></time></li>
       <li><b>Tags:</b> <?php echo $page->tags() ?></li>
     </ul>
 
@@ -21,10 +20,10 @@
 
     <nav class="nextprev cf" role="navigation">
       <?php if($prev = $page->prevVisible()): ?>
-      <a class="prev" href="<?php echo $prev->url() ?>">&larr; previous</a>
+      <a class="prev" href="<?php echo $prev->url() ?>">&larr; <?php echo $prev->title()->html() ?></a>
       <?php endif ?>
       <?php if($next = $page->nextVisible()): ?>
-      <a class="next" href="<?php echo $next->url() ?>">next &rarr;</a>
+      <a class="next" href="<?php echo $next->url() ?>"><?php echo $next->title()->html() ?> &rarr;</a>
       <?php endif ?>
     </nav>
 

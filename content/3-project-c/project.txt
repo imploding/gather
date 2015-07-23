@@ -1,12 +1,8 @@
-Title: Project B
+Title: Board C
 
 ----
 
-Year: 2013
-
-----
-
-Tags: city
+Tags: stuff
 
 ----
 

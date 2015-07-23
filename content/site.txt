@@ -1,8 +1,8 @@
-Title: Kirby Starterkit
+Title: Gather
 
 ----
 
-Author: Bastian Allgeier GmbH
+Author: Matt Thomas
 
 ----
 
@@ -10,8 +10,8 @@ Description: This is Kirby's Starterkit.
 
 ----
 
-Keywords: Kirby, CMS, file-based
+Keywords:
 
 ----
 
-Copyright: © 2009-(date: Year) (link: http://getkirby.com text: Kirby)
+Copyright: © 2015-(date: Year) (link: https://mthomas.com.au text: Matt Thomas)
