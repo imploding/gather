@@ -13,9 +13,11 @@
 
       <div class="grid">
         <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
-          <div class="grid-item">
-            <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>" width="<?php echo $image->width() ?>" height="<?php echo $image->height() ?>">
-          </div>
+
+          <a class="grid-item" href="<?php echo $image->url() ?>" data-size="<?php echo $image->width() ?>x<?php echo $image->height() ?>">
+	          <img src="<?php echo $image->url() ?>" alt="" width="<?php echo $image->width() ?>" height="<?php echo $image->height() ?>"/>
+	        </a>
+
         <?php endforeach ?>
       </div>
 
@@ -31,5 +33,7 @@
     </nav>
 
   </main>
+
+<?php snippet('photo-swipe') ?>
 
 <?php snippet('footer') ?>

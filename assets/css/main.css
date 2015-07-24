@@ -247,12 +247,6 @@ h1 a, h2 a, h3 a, h4 a {
 .main ol {
   margin-bottom: 1.5em;
 }
-.main a {
-  border-bottom: 2px solid #ddd;
-}
-.main a:hover {
-  border-color: #222;
-}
 
 /* Text blocks */
 .text ul,
