@@ -6,7 +6,7 @@
 
   </footer>
 
-
+  <?php echo js('assets/js/images-loaded.js') ?>
   <?php echo js('assets/js/masonry.min.js') ?>
   <?php echo js('assets/js/photoswipe.min.js') ?>
   <?php echo js('assets/js/photoswipe-ui.min.js') ?>

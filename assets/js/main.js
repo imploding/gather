@@ -1,14 +1,34 @@
 // Masonry start on img load
-document.getElementsByTagName('img')[0].onload = function() {
-  var elem = document.querySelector('.grid');
-  var msnry = new Masonry( elem, {
+// docReady( function() {
+//
+//   var grid = document.querySelector('.grid');
+//   var msnry;
+//
+//   imagesLoaded( grid, function() {
+//     // init Isotope after all images have loaded
+//     msnry = new Masonry( grid, {
+//       itemSelector: '.grid-item'
+//     });
+//   });
+//
+// });
+
+docReady( function() {
+  var grid = document.querySelector('.grid');
+
+  var msnry = new Masonry( grid, {
     itemSelector: '.grid-item'
   });
-};
+
+  // init Isotope after each image has loaded
+  imagesLoaded( grid, function() {
+    msnry.layout();
+  });
+});
 
 
 // Photo Swipe init
-(function() {
+( function() {
 
   var initPhotoSwipeFromDOM = function(gallerySelector) {
 
@@ -270,9 +290,9 @@ document.getElementsByTagName('img')[0].onload = function() {
         item.w = item.o.w;
         item.h = item.o.h;
       } else {
-        item.src = item.m.src;
-        item.w = item.m.w;
-        item.h = item.m.h;
+        item.src = item.o.src;
+        item.w = item.o.w;
+        item.h = item.o.h;
       }
     });
 
